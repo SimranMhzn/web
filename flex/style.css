@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav{
+  display: flex;
+  list-style: none;
+  background-color: rgb(172, 178, 235);
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+}
+
+li a{
+  text-decoration: none;
+  padding: 20px;
+  color: rgb(109, 117, 189);
+}
+
+li a:hover{
+ color: rgb(51, 60, 145);
+ transition: 0s;
+}
+
+@media all and (max-width:800px){
+  .nav{
+    flex-direction: column;
+    height: 100px;
+  }
+  li a:hover{
+    color: brown;
+  }
+}
+
+@media all and (max-width:600px){
+  .nav{
+    justify-content: flex-start;
+  }
+}

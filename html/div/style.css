@@ -1,0 +1,8 @@
+.test{
+  margin: 0;
+  background-color: aqua;
+  color: green;
+  max-width: 200px;
+  display: flex;
+  align-content: center;
+}

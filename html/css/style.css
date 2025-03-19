@@ -1,0 +1,23 @@
+h1{
+  color:red;
+  font-size: 155px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.box{
+  width: 700px;
+  height: 300px;
+  background-color: antiquewhite;
+  display: grid;
+  justify-content: center;
+}
+
+button.hover{
+  background-color: black;
+}
