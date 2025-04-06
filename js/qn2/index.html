@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="">
+    <label for="">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email:">
+    <label for="">Password:</label>
+    <input type="password" name="password" id="password" placeholder="Enter your password:">  
+    <button id="submit">Submit</button>
+  </form>
+  <script>
+    const pw=document.getElementById('password');
+    const submit=document.getElementById('submit');
+    submit.addEventListener('click',()=>{
+      const pwValue=pw.value;
+      const re=/^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{8,16}$/;
+      if(re.test(pwValue)){
+        alert('Password is valid');
+      }
+      else{
+        alert('Password is invalid');
+      }
+    });
+  </script>
+</body>
+</html>
